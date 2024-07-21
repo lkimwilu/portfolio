@@ -1,0 +1,235 @@
+body{
+    font-size: 16px !important;
+    box-sizing: border-box;
+    margin: 30px !important;
+    padding: 0;
+    color: #333 !important;
+}
+
+/* start nav section */
+.nav_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #333;
+    color: #fff;
+}
+
+.nav_section .logo img {
+    width: 100px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav_section .nav_links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adjust gap for spacing */
+    padding: 0;
+    margin: 0;
+}
+
+.nav_section .nav_links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav_section .nav_links ul li a:hover {
+    color: #ccc;
+}
+
+.nav_section .nav_icons ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Adjust gap for spacing */
+    padding: 0;
+    margin: 0;
+}
+
+.nav_section .nav_icons ul li a {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav_section .nav_icons ul li a:hover {
+    color: #ccc;
+}
+/* end nav section */
+
+
+/* start hero section */
+.hero_section{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    color: #42446E;
+    height: 60vh;
+    padding: 5rem;
+    margin-top: 150px;
+
+}
+.hero_section p{
+    font-size: 64px;
+}
+.hero_section img{
+    width: 450px;
+    height: 550px;
+}
+/* end hero section */
+
+
+/* start about section */
+.about_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.about_section .about_content span:first-child{
+    color: #42446E;
+    font-size: 48px;
+    font-weight: bold;
+}
+.about_content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.about_content span:first-child{
+    color: #42446E;
+    font-size: 48px;
+    font-weight: bold;
+}
+.about_section .about_content span:last-child{
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.about_section .tech_icons ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+/* end about section */
+
+
+/* start projects section */
+.projects_section {
+    padding: 60px 0;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects_section .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    height: 600px;
+    /* width: 30%; */
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+}
+
+.projects_section .proj_content {
+    text-align: start;
+    padding: 10px;
+}
+
+
+.project_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+/* end projects section */
+
+/* start education section */
+.education_section {
+    padding: 60px 0;
+    background: #f9f9f9;
+    margin-top: 150px;
+
+}
+
+.education_item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.education_item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.education_item p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.education_item strong {
+    color: #333;
+}
+
+
+/* end education section */
+
+
+/* start footer section */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+.footer_social {
+    margin-bottom: 10px;
+}
+
+.footer_social a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer_social a:hover {
+    color: #ccc;
+}
+
+.footer_license p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer_license a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer_license a:hover {
+    color: #ccc;
+}
