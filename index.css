@@ -93,7 +93,7 @@ body{
     text-align: center;
 }
 
-.about_section .about_content span:first-child{
+.about_section .mytech span:first-child{
     color: #42446E;
     font-size: 48px;
     font-weight: bold;
@@ -108,7 +108,7 @@ body{
     font-size: 48px;
     font-weight: bold;
 }
-.about_section .about_content span:last-child{
+.about_section .mytech{
     color: #333;
     font-size: 24px;
     margin-top: 20px;
