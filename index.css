@@ -1,7 +1,7 @@
-body{
+body {
     font-size: 16px !important;
     box-sizing: border-box;
-    margin: 30px !important;
+    margin: 0 !important;
     padding: 0;
     color: #333 !important;
 }
@@ -11,125 +11,169 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
     background: #333;
     color: #fff;
 }
 
 .nav_section .logo img {
     width: 100px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
 }
 
-.nav_section .nav_links ul {
+.nav_section .nav_links ul,
+.nav_section .nav_icons ul {
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 20px; /* Adjust gap for spacing */
+    gap: 15px;
     padding: 0;
     margin: 0;
 }
 
-.nav_section .nav_links ul li a {
-    font-size: 18px;
+.nav_section .nav_links ul li a,
+.nav_section .nav_icons ul li a {
+    font-size: 16px;
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
 }
 
-.nav_section .nav_links ul li a:hover {
-    color: #ccc;
-}
-
-.nav_section .nav_icons ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 20px; /* Adjust gap for spacing */
-    padding: 0;
-    margin: 0;
-}
-
-.nav_section .nav_icons ul li a {
-    font-size: 24px;
-    color: #fff;
-    transition: color 0.3s;
-}
-
+.nav_section .nav_links ul li a:hover,
 .nav_section .nav_icons ul li a:hover {
     color: #ccc;
 }
+
 /* end nav section */
 
-
 /* start hero section */
-.hero_section{
+.hero_section {
     display: flex;
-    justify-content: space-around;
-    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     color: #42446E;
-    height: 60vh;
-    padding: 5rem;
-    margin-top: 150px;
+    height: auto;
+    padding: 2rem;
+    margin-top: 30px;
+}
 
+.hero_section p {
+    font-size: 32px;
+    line-height: 1.5;
 }
-.hero_section p{
-    font-size: 64px;
+
+.hero_section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
 }
-.hero_section img{
-    width: 450px;
-    height: 550px;
-}
+
 /* end hero section */
 
-
 /* start about section */
-.about_section{
+.about_section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: auto;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 30px;
     text-align: center;
 }
 
-.about_section .mytech span:first-child{
+.about_section .mytech span:first-child {
     color: #42446E;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
 }
+
 .about_content {
     display: flex;
     justify-content: center;
     align-content: center;
 }
-.about_content span:first-child{
+
+.about_content span:first-child {
     color: #42446E;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
 }
-.about_section .mytech{
+
+.about_section .mytech {
     color: #333;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 20px;
 }
-.about_section .tech_icons ul{
+
+.about_section .tech_icons ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 50px;
+    gap: 30px;
 }
-/* end about section */
+.about_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+}
 
+.about_section .mytech span:first-child {
+    color: #42446E;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.about_content span:first-child {
+    color: #42446E;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about_section .mytech {
+    color: #333;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.about_section .tech_icons ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.about_section .tech_icons ul li img {
+    width: 50px;
+    height: auto;
+}
+
+/* end about section */
 
 /* start projects section */
 .projects_section {
-    padding: 60px 0;
-    margin-top: 50px;
+    padding: 30px 0;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
 .projects_section .project {
@@ -138,11 +182,10 @@ body{
     align-items: center;
     justify-content: center;
     background: #f0f0f0;
-    height: 600px;
-    /* width: 30%; */
-    border-radius: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px; 
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -151,21 +194,21 @@ body{
     padding: 10px;
 }
 
-
 .project_links {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    width: 100%;
 }
+
 /* end projects section */
 
 /* start education section */
 .education_section {
-    padding: 60px 0;
+    padding: 30px 0;
     background: #f9f9f9;
-    margin-top: 150px;
-
+    margin-top: 30px;
 }
 
 .education_item {
@@ -190,9 +233,7 @@ body{
     color: #333;
 }
 
-
 /* end education section */
-
 
 /* start footer section */
 .footer {
@@ -200,8 +241,7 @@ body{
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    margin-top: 150px;
-
+    margin-top: 30px;
 }
 
 .footer_social {
@@ -232,4 +272,73 @@ body{
 
 .footer_license a:hover {
     color: #ccc;
+}
+
+/* end footer section */
+
+/* Media Queries for Responsive Design */
+@media (max-width: 980px) {
+    .hero_section p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav_section .logo img {
+        width: 60px; /* Smaller logo on mobile */
+    }
+
+    .nav_section .nav_links ul,
+    .nav_section .nav_icons ul {
+        flex-direction: row; /* Ensure items are in the same row */
+        gap: 10px;
+    }
+
+    .hero_section p {
+        font-size: 24px;
+    }
+
+    .about_section .mytech span:first-child,
+    .about_content span:first-child {
+        font-size: 28px;
+    }
+    .about_section .tech_icons ul {
+        gap: 20px;
+    }
+
+    .about_section .tech_icons ul li img {
+        width: 40px; 
+    }
+}
+
+@media (max-width: 360px) {
+    .nav_section {
+        padding: 10px;
+    }
+
+    .nav_section .logo img {
+        width: 50px; /* Even smaller logo on very small screens */
+    }
+
+    .hero_section p {
+        font-size: 20px;
+    }
+
+    .about_section .mytech span:first-child,
+    .about_content span:first-child {
+        font-size: 24px;
+    }
+
+    .projects_section .project {
+        width: 100%;
+    }
+    .about_section .tech_icons ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .about_section .tech_icons ul li img {
+        width: 30px;
+    }
 }
