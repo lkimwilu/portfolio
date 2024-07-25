@@ -49,9 +49,8 @@ body {
 /* start hero section */
 .hero_section {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
     color: #42446E;
     height: auto;
     padding: 2rem;
@@ -59,7 +58,7 @@ body {
 }
 
 .hero_section p {
-    font-size: 32px;
+    font-size: 44px;
     line-height: 1.5;
 }
 
@@ -281,6 +280,16 @@ body {
     .hero_section p {
         font-size: 28px;
     }
+    .hero_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #42446E;
+        height: auto;
+        padding: 2rem;
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -293,11 +302,22 @@ body {
         flex-direction: row; /* Ensure items are in the same row */
         gap: 10px;
     }
-
-    .hero_section p {
-        font-size: 24px;
+    .hero_section {
+        flex-direction: column;
+        padding: 2rem;
+        height: auto;
+        margin-top: 100px;
+        text-align: center;
     }
 
+    .hero_section p {
+        font-size: 48px; /* Reduce font size on tablets */
+    }
+
+    .hero_section img {
+        width: 300px; /* Adjust image size on tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
     .about_section .mytech span:first-child,
     .about_content span:first-child {
         font-size: 28px;
@@ -312,16 +332,25 @@ body {
 }
 
 @media (max-width: 360px) {
+    .hero_section {
+        padding: 1rem;
+        margin-top: 80px;
+    }
+
+    .hero_section p {
+        font-size: 36px; /* Further reduce font size on mobile */
+    }
+
+    .hero_section img {
+        width: 250px; /* Further adjust image size on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
     .nav_section {
         padding: 10px;
     }
 
     .nav_section .logo img {
         width: 50px; /* Even smaller logo on very small screens */
-    }
-
-    .hero_section p {
-        font-size: 20px;
     }
 
     .about_section .mytech span:first-child,
